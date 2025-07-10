@@ -354,3 +354,79 @@ for i in range(1000):
 
 —
 
+##funções ou subrotinas:
+
+
+🎯 O que são Sub-rotinas?
+Em bom Pythonês:
+Sub-rotinas são blocos de código separados que executam tarefas específicas e podem ser chamados sempre que precisar.
+Elas também são conhecidas como funções!
+
+💡 Serve pra organizar, reutilizar e modularizar seu código.
+
+🧠 Estrutura de uma sub-rotina (função) em Python:
+python
+Copiar
+Editar
+def nome_da_funcao(parametros):
+    # bloco de código
+    return resultado
+🔁 Exemplo básico:
+python
+Copiar
+Editar
+def saudacao():
+    print("Olá, Mari! Bem-vinda ao mundo das sub-rotinas!")
+
+saudacao()
+📤 Saída:
+
+css
+Copiar
+Editar
+Olá, Mari! Bem-vinda ao mundo das sub-rotinas!
+⚙️ Com parâmetros:
+python
+Copiar
+Editar
+def soma(a, b):
+    return a + b
+
+resultado = soma(3, 7)
+print(resultado)
+📤 Saída:
+
+Copiar
+Editar
+10
+✂️ Exemplo com matriz:
+Digamos que você quer calcular a média dos valores de uma matriz. Você pode fazer:
+
+python
+Copiar
+Editar
+def media_matriz(matriz):
+    soma = 0
+    qtd = 0
+    for linha in matriz:
+        for valor in linha:
+            soma += valor
+            qtd += 1
+    return soma / qtd
+Chamando depois:
+
+python
+Copiar
+Editar
+matriz = [[1, 2], [3, 4]]
+print(media_matriz(matriz))  # Saída: 2.5
+
+#sintaxe
+
+def nome_funcao(parâmetros):
+    # faz alguma coisa
+    return valor
+
+# Chamada:
+resultado = nome_funcao(valores)
+
