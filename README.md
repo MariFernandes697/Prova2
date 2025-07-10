@@ -86,31 +86,14 @@ Valor de i: 3
 Valor de i: 4
 
 
-⚠️ Atenção, Mari:
+⚠️ Atenção!
 Se você esquecer de alterar a variável de controle (i += 1), o loop vira um loop infinito.
  Python vai rodar até o fim dos tempos... ou até você apertar Ctrl+C em desespero kkkk 😵
-
-🆚 for vs while
-Característica
-for
-while
-Quando usar?
-Quando você sabe quantas vezes repetir
-Quando você não sabe ao certo
-Controle automático
-Sim, com range()
-Não, você mesma controla
-Risco de loop eterno
-Baixo
-Alto, se esquecer o contador
-Exemplo clássico
-Tabuada, vetores
-Menu interativo, login, testes
 
 
 ✨ Exemplo de senha com while:
 python
-CopiarEditar
+
 senha = ""
 while senha != "1234":
     senha = input("Digite a senha: ")
@@ -118,9 +101,7 @@ print("Acesso liberado!")
 
 🔐 Enquanto o usuário errar a senha, o loop continua!
 
-📌 RESUMÃO PRA SUA COLINHA:
-python
-CopiarEditar
+#sintaxe
 # ESTRUTURA DO WHILE:
 variável = valor_inicial
 while condição:
@@ -366,45 +347,24 @@ Elas também são conhecidas como funções!
 
 🧠 Estrutura de uma sub-rotina (função) em Python:
 python
-Copiar
-Editar
+
 def nome_da_funcao(parametros):
     # bloco de código
     return resultado
-🔁 Exemplo básico:
-python
-Copiar
-Editar
-def saudacao():
-    print("Olá, Mari! Bem-vinda ao mundo das sub-rotinas!")
 
-saudacao()
-📤 Saída:
-
-css
-Copiar
-Editar
-Olá, Mari! Bem-vinda ao mundo das sub-rotinas!
-⚙️ Com parâmetros:
-python
-Copiar
-Editar
 def soma(a, b):
     return a + b
 
 resultado = soma(3, 7)
 print(resultado)
 📤 Saída:
-
-Copiar
-Editar
 10
+
 ✂️ Exemplo com matriz:
 Digamos que você quer calcular a média dos valores de uma matriz. Você pode fazer:
 
 python
-Copiar
-Editar
+
 def media_matriz(matriz):
     soma = 0
     qtd = 0
@@ -413,11 +373,8 @@ def media_matriz(matriz):
             soma += valor
             qtd += 1
     return soma / qtd
+    
 Chamando depois:
-
-python
-Copiar
-Editar
 matriz = [[1, 2], [3, 4]]
 print(media_matriz(matriz))  # Saída: 2.5
 
